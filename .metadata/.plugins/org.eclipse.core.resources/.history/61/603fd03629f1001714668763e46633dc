@@ -1,0 +1,5 @@
+package com.stonenots.noobchain;
+
+public class Block {
+
+}
