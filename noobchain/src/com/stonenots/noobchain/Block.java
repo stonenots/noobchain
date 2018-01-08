@@ -19,12 +19,13 @@ public class Block {
 		this.hash = calculateHash(); //Making sure we do this after we set the other values.
 	}
 	
+	//Calculate new hash based on blocks contents
 	public String calculateHash() {
-		String calculatedhash = StringUtil.applySha256( 
-				previousHash +
-				Long.toString(timeStamp) +
-				data 
-				);
+		String calculatedhash = StringUtil.applySha256(
+				previousHash + 
+				Long.toString(timeStamp) + 
+				Integer.toString(nonce) + 
+				data);
 		return calculatedhash;
 	}
 	

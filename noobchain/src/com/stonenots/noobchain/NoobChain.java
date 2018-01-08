@@ -9,7 +9,7 @@ public class NoobChain {
 
 	public static List<Block> blockchain = new ArrayList<Block>();
 	
-	public static int difficulty = 1;
+	public static int difficulty = 5;
 
 	public static void main(String[] args) {
 
